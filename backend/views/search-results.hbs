@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">E-mart</a>
+    <a class="navbar-brand" href="/">E-mart</a>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
@@ -18,15 +18,37 @@
   </div>
 </nav>
 
-<br>
 <div class="container">
+
+  <!--  Title-->
   <div class="text-center">
-    <h3>
-      <b> VENDOR MANAGEMENT SYSTEM </b>
-    </h3>
     <br>
-    <h4>
-      TEAM 6
-    </h4>
+    <h3>
+      LOOK UP AN ORDER
+    </h3>
   </div>
+  <br>
+
+  <!--  Results-->
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col">Order ID</th>
+      <th scope="col">Vendor Name</th>
+      <th scope="col">Item Name</th>
+      <th scope="col">Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each result}}
+      <tr class="table-light">
+        <td>{{this.order_id}}</td>
+        <td>{{this.vendor_name}}</td>
+        <td>{{this.item_name}}</td>
+        <td>{{this.quantity}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+
 </div>

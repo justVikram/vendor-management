@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">E-mart</a>
+    <a class="navbar-brand" href="/">E-mart</a>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="dashboard">Dashboard
+          <a class="nav-link" href="#">Dashboard
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
@@ -18,15 +18,23 @@
   </div>
 </nav>
 
-<br>
 <div class="container">
+
+  <!--  Title-->
   <div class="text-center">
-    <h3>
-      <b> VENDOR MANAGEMENT SYSTEM </b>
-    </h3>
     <br>
-    <h4>
-      TEAM 6
-    </h4>
+    <h3>
+      LOOK UP AN ORDER
+    </h3>
   </div>
+  <br>
+
+  <!--  Search bar-->
+  <form action="search-results" method="post">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Order ID" aria-label="search-id"
+             aria-describedby="button-addon2" name="sid">
+      <button class="btn btn-primary" type="submit" id="search-id">GO</button>
+    </div>
+  </form>
 </div>

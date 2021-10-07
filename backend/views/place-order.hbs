@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">E-mart</a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard">Dashboard
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Place Order
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!--  Title-->
+  <div class="text-center">
+    <br>
+    <h3>
+      PLACE A NEW ORDER
+    </h3>
+  </div>
+
+  <form action="gen-order-id" method="post">
+    <!--  Dropdown menu for selecting vendor-->
+    <div class="form-group">
+      <label for="vendor-select" class="form-label mt-4">Vendor</label>
+      <select class="form-select" id="vendor-select" name="vendor_select">
+        <option>Asics</option>
+        <option>Decathlon</option>
+        <option>Adidas</option>
+        <option>Nike</option>
+      </select>
+    </div>
+
+    <!--  Items for sale by the vendor-->
+    <div class="form-group">
+      <label for="item-select" class="form-label mt-4">Item</label>
+      <select class="form-select" id="item-select" name="item_select">
+        <option>Shoes</option>
+        <option>Joggers</option>
+        <option>Shorts</option>
+        <option>Tees</option>
+      </select>
+    </div>
+
+    <!--  Quantity to be ordered-->
+    <div class="form-group">
+      <label class="col-form-label mt-4" for="quantity">Quantity</label>
+      <input type="number" class="form-control" id="quantity" name="quantity">
+    </div>
+
+    <br>
+    <!--  Submit details entered-->
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+

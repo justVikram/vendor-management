@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">E-mart</a>
+    <a class="navbar-brand" href="/">E-mart</a>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/dashboard">Dashboard
+          <a class="nav-link" href="dashboard">Dashboard
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/place-order">Place Order
+          <a class="nav-link" href="place-order">Place Order
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
@@ -18,3 +18,14 @@
   </div>
 </nav>
 
+<div class="container">
+  <div class="text-center">
+    <!--  Assign random order ID-->
+    <br>
+    <h3>Thank you for shopping with us!</h3>
+    <br>
+    <h4>Your order ID is:</h4>
+      <br>
+      <h3><b>{{result}}</b></h3>
+  </div>
+</div>
