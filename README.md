@@ -1,3 +1,9 @@
+# Vendor Management
+
+Web Development Course Activity, V Semester, 2021.
+
+## About
+
 Design a web page which supports the following options:
 From a dropdown menu, user can select a vendor name (Give an option of
 at least 5 vendors).
